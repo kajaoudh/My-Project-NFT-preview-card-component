@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+    font-family: 'Outfit',sans-serif;
+
+    }
+
+section {
+    background-color: hsl(216, 50%, 11.3%);
+    padding: 1em;
+    border-radius: 2em;
+}
+#card {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.6em;
+    border-radius: 1em;
+    max-width: 375px;
+    margin: 1em;
+    
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1em;
+}
+
+#card .main-image {
+position: relative;
+
+}
+
+#card .main-image div {
+    position: absolute;
+    top: 0%;
+    background-color: hsl(178, 100%, 50%,50%);
+    width: 100%;
+    height:calc(100% - 2px);
+    z-index: 999;
+    border-radius: 1em;
+    opacity: 0;
+}
+
+#card .main-image div  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#card .main-image div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 25px;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.time-left {
+    padding: 1.5em;
+    padding-left: 0%;
+    padding-right: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.time-left .ethereum {
+    color: hsl(178, 100%, 50%);
+}
+
+.creation {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.creation img {
+    width: 2em;
+    margin-right: 1em;
+    border: 1px solid white;
+}
+
+.creation p {
+    padding-top: 0.5em;
+}
+
+span {
+    color: hsl(0, 0%, 100%);
+}
+ 
+span:hover, span:focus {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+h1:hover, h1:focus {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution {
+     font-size: 11px; text-align: center; 
+    }
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
